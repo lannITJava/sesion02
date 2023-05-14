@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thực hành form</title>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <section>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Registration information</legend>
+                <label for="firstname"><b>Firstname<span style="color: black;">*</span>:</b></label>
+            <input placeholder="enter your first name" type="text" id="firstname" name="firstname" required>
+            <label for="Last name"><b>Last name:</b></label>
+            <input placeholder="enter your last name" type="text" id="lastname" name="lastname"><br>
+
+            <label for="email"><b>Email<span style="color: black;">*</span>:</b></label>
+            <input placeholder="enter your email" type="email" id="email" name="email" required>
+            <label for="phone"><b>Phone<span style="color: black;">*</span>:</b></label>
+            <input placeholder="enter your last name" type="text" id="phone" name="phone" required><br>
+
+            <label for="password"><b>Password<span style="color: black;">*</span>:</b></label>
+            <input placeholder="enter your password" type="password" id="password" name="password" required>
+            <label for="confirm_password"><b>Confirm Password<span style="color: black;">*</span>:</b></label>
+            <input placeholder="enter your password again" type="password" id="confirm_password" name="confirm_password" required>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="gender"><b>Gender:</b></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <label for="hobbies"><b>Hobbies</b></label>
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="hobbies" value="travel">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="movies" name="hobbies" value="movies">
+                <label for="movies">Movies</label><br>
+
+            <label for="source of income"><b>Source of Income:</b></label>
+            <select>
+                <option value="employed">Employed</option>
+                
+            </select>
+            <label for="income"><b>Income:</b></label>
+            <input type="range" name="income"><br>
+
+            <label for="age"><b>Age:</b></label>
+            <input type="number" id="age" name="age">
+            <label for="profile picture"><b>Profile Picture:</b></label>
+            <input type="file" name="profile picture" id="chosse file" value="choose file"><br>
+
+            <label for="birthday"><b>Birthday:</b></label>
+            <input type="date" name="birthday">
+            <label for="address"><b>Address:</b></label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="bio"><b>Bio:</b></label>
+            <textarea name="bio" id="bio" cols="60" rows="3"></textarea>
+            
+            </fieldset><br>
+         
+            <input type="submit" value="Create">
+            <input type="reset" value="Reset">
+            
+        </form>
+    </section>
+</body>
+</html>
